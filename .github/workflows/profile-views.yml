@@ -1,0 +1,17 @@
+name: Update Profile Views Badge
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 每天运行一次
+  workflow_dispatch:
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update visitor badge
+        uses: jwenjian/visitor-badge-action@v1
+        with:
+          badge_slug: peterzhan321-stack
+          badge_key: page_id
+          count_type: 'increase'
