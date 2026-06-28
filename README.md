@@ -1,5 +1,8 @@
 <div align="center">
 
+<!-- Google 风格头像 -->
+<img src="./assets/avatar.svg" width="300" alt="peter avatar" />
+
 <!-- MIT Logo -->
 <img src="https://img.shields.io/badge/-MIT-A31F34?style=for-the-badge&logo=mit&logoColor=white" />
 <img src="https://img.shields.io/badge/-Google-4285F4?style=for-the-badge&logo=google&logoColor=white" />

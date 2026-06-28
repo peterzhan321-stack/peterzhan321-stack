@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Google 四色渐变 -->
+    <linearGradient id="gBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1558d6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EA4335;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5221f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBC05;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e37400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34A853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e8e3e;stop-opacity:1" />
+    </linearGradient>
+    <!-- 背景渐变 -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#1a1f36;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D1117;stop-opacity:1" />
+    </radialGradient>
+    <!-- MIT 红渐变 -->
+    <linearGradient id="mitRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A31F34;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8a1a2d;stop-opacity:1" />
+    </linearGradient>
+    <!-- 发光效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#4285F4" flood-opacity="0.4"/>
+    </filter>
+    <!-- 噪点纹理 -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.05"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+    <!-- 扫描线效果 -->
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="4" height="4">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="#ffffff" stroke-width="0.3" opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="500" height="500" rx="50" fill="url(#bgGrad)"/>
+
+  <!-- 扫描线覆盖 -->
+  <rect width="500" height="500" rx="50" fill="url(#scanlines)"/>
+
+  <!-- 网格背景 -->
+  <g opacity="0.04" stroke="#4285F4" stroke-width="0.5">
+    <line x1="0" y1="50" x2="500" y2="50"/><line x1="0" y1="100" x2="500" y2="100"/>
+    <line x1="0" y1="150" x2="500" y2="150"/><line x1="0" y1="200" x2="500" y2="200"/>
+    <line x1="0" y1="250" x2="500" y2="250"/><line x1="0" y1="300" x2="500" y2="300"/>
+    <line x1="0" y1="350" x2="500" y2="350"/><line x1="0" y1="400" x2="500" y2="400"/>
+    <line x1="0" y1="450" x2="500" y2="450"/>
+    <line x1="50" y1="0" x2="50" y2="500"/><line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/><line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/><line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="450" y1="0" x2="450" y2="500"/>
+  </g>
+
+  <!-- 外圈装饰 - 旋转轨道 -->
+  <circle cx="250" cy="230" r="185" fill="none" stroke="#4285F4" stroke-width="0.5" opacity="0.2" stroke-dasharray="8 4"/>
+  <circle cx="250" cy="230" r="195" fill="none" stroke="#EA4335" stroke-width="0.5" opacity="0.15" stroke-dasharray="12 6">
+    <animateTransform attributeName="transform" type="rotate" values="0 250 230;-360 250 230" dur="30s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="230" r="175" fill="none" stroke="#FBBC05" stroke-width="0.5" opacity="0.12" stroke-dasharray="6 8">
+    <animateTransform attributeName="transform" type="rotate" values="0 250 230;360 250 230" dur="25s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 四色光弧 -->
+  <g filter="url(#glow)">
+    <!-- Blue arc -->
+    <path d="M 250 55 A 175 175 0 0 1 425 230" fill="none" stroke="#4285F4" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Red arc -->
+    <path d="M 425 230 A 175 175 0 0 1 250 405" fill="none" stroke="#EA4335" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0.75s" repeatCount="indefinite"/>
+    </path>
+    <!-- Yellow arc -->
+    <path d="M 250 405 A 175 175 0 0 1 75 230" fill="none" stroke="#FBBC05" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Green arc -->
+    <path d="M 75 230 A 175 175 0 0 1 250 55" fill="none" stroke="#34A853" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="2.25s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- 浮动粒子 -->
+  <g filter="url(#glow)">
+    <circle cx="80" cy="80" r="2" fill="#4285F4" opacity="0.6">
+      <animate attributeName="cy" values="80;60;80" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="100" r="2.5" fill="#EA4335" opacity="0.5">
+      <animate attributeName="cy" values="100;75;100" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="380" r="1.8" fill="#FBBC05" opacity="0.5">
+      <animate attributeName="cy" values="380;360;380" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="360" r="2.2" fill="#34A853" opacity="0.5">
+      <animate attributeName="cy" values="360;340;360" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="120" r="1.5" fill="#4285F4" opacity="0.4">
+      <animate attributeName="cy" values="120;100;120" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="340" cy="130" r="1.8" fill="#EA4335" opacity="0.4">
+      <animate attributeName="cy" values="130;110;130" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 中心圆环 - 旋转 -->
+  <g filter="url(#glowStrong)">
+    <!-- 主圆环 -->
+    <circle cx="250" cy="230" r="85" fill="none" stroke="#4285F4" stroke-width="2.5" opacity="0.7" stroke-dasharray="134 400">
+      <animateTransform attributeName="transform" type="rotate" values="0 250 230;360 250 230" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="230" r="85" fill="none" stroke="#EA4335" stroke-width="2.5" opacity="0.6" stroke-dasharray="134 400" stroke-dashoffset="-134">
+      <animateTransform attributeName="transform" type="rotate" values="0 250 230;360 250 230" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="230" r="85" fill="none" stroke="#FBBC05" stroke-width="2.5" opacity="0.5" stroke-dasharray="134 400" stroke-dashoffset="-268">
+      <animateTransform attributeName="transform" type="rotate" values="0 250 230;360 250 230" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="230" r="85" fill="none" stroke="#34A853" stroke-width="2.5" opacity="0.5" stroke-dasharray="134 400" stroke-dashoffset="-402">
+      <animateTransform attributeName="transform" type="rotate" values="0 250 230;360 250 230" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 中心背景圆 -->
+  <circle cx="250" cy="230" r="72" fill="#0D1117" opacity="0.9" stroke="url(#gBlue)" stroke-width="1"/>
+
+  <!-- Google "G" 标志 -->
+  <g filter="url(#glow)">
+    <!-- G 的外圈 -->
+    <circle cx="250" cy="225" r="42" fill="none" stroke="#4285F4" stroke-width="5" stroke-dasharray="198 66" stroke-linecap="round"/>
+    <circle cx="250" cy="225" r="42" fill="none" stroke="#EA4335" stroke-width="5" stroke-dasharray="66 198" stroke-dashoffset="-66" stroke-linecap="round"/>
+    <!-- G 的横杠 -->
+    <line x1="272" y1="225" x2="292" y2="225" stroke="#34A853" stroke-width="5" stroke-linecap="round"/>
+    <!-- G 的竖线 -->
+    <line x1="292" y1="225" x2="292" y2="245" stroke="#FBBC05" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 代码装饰 - 左上 -->
+  <g opacity="0.25" font-family="'Fira Code', 'Consolas', 'Courier New', monospace" font-size="11">
+    <text x="25" y="35" fill="#4285F4">01</text>
+    <text x="25" y="50" fill="#EA4335">  #include</text>
+    <text x="105" y="50" fill="#34A853">&lt;google/cloud.hpp&gt;</text>
+    <text x="25" y="65" fill="#EA4335">  using</text>
+    <text x="65" y="65" fill="#FBBC05">namespace</text>
+    <text x="130" y="65" fill="#8B949E">MIT;</text>
+    <text x="25" y="80" fill="#EA4335">  int</text>
+    <text x="50" y="80" fill="#4285F4">main</text>
+    <text x="80" y="80" fill="#8B949E">() {</text>
+    <text x="25" y="95" fill="#EA4335">    build</text>
+    <text x="80" y="95" fill="#FBBC05">(future);</text>
+    <text x="25" y="110" fill="#8B949E">  }</text>
+  </g>
+
+  <!-- 代码装饰 - 右下 -->
+  <g opacity="0.2" font-family="'Fira Code', 'Consolas', 'Courier New', monospace" font-size="11">
+    <text x="340" y="395" fill="#8B949E">  .await</text>
+    <text x="340" y="410" fill="#34A853">  .deploy</text>
+    <text x="400" y="410" fill="#FBBC05">("MIT")</text>
+    <text x="340" y="425" fill="#34A853">  .target</text>
+    <text x="400" y="425" fill="#EA4335">("Google")</text>
+    <text x="340" y="440" fill="#8B949E">  .finish</text>
+    <text x="395" y="440" fill="#4285F4">();</text>
+    <text x="340" y="455" fill="#8B949E">}</text>
+    <text x="390" y="395" fill="#8B949E">// 2026</text>
+  </g>
+
+  <!-- 名字 - 科技风格 -->
+  <g filter="url(#glow)">
+    <text x="250" y="355" font-family="'SF Pro Display', 'Segoe UI', 'Inter', Arial, sans-serif" font-size="42" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="6" opacity="0.95">peter</text>
+    <!-- 名字阴影 -->
+    <text x="252" y="357" font-family="'SF Pro Display', 'Segoe UI', 'Inter', Arial, sans-serif" font-size="42" font-weight="900" fill="#4285F4" text-anchor="middle" letter-spacing="6" opacity="0.3">peter</text>
+  </g>
+
+  <!-- MIT 标签 -->
+  <g>
+    <rect x="135" y="370" width="70" height="24" rx="12" fill="url(#mitRed)" opacity="0.9"/>
+    <text x="170" y="386" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">MIT</text>
+  </g>
+
+  <!-- Google 标签 -->
+  <g>
+    <rect x="215" y="370" width="90" height="24" rx="12" fill="#4285F4" opacity="0.9"/>
+    <text x="260" y="386" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">GOOGLE</text>
+  </g>
+
+  <!-- 副标题 -->
+  <text x="250" y="418" font-family="'SF Pro Display', 'Segoe UI', Arial, sans-serif" font-size="13" fill="#8B949E" text-anchor="middle" letter-spacing="3" font-weight="500">C++ · SYSTEMS · ALGORITHMS</text>
+
+  <!-- 四色装饰点 + 动画 -->
+  <g filter="url(#glow)">
+    <circle cx="165" cy="448" r="3" fill="#4285F4">
+      <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="448" r="3" fill="#EA4335">
+      <animate attributeName="r" values="2;4;2" dur="2.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="255" cy="448" r="3" fill="#FBBC05">
+      <animate attributeName="r" values="2;4;2" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="448" r="3" fill="#34A853">
+      <animate attributeName="r" values="2;4;2" dur="2.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 顶部装饰 -->
+  <g opacity="0.15" font-family="'Fira Code', monospace" font-size="9">
+    <text x="250" y="28" fill="#4285F4" text-anchor="middle">▲ system ▲</text>
+  </g>
+</svg>
