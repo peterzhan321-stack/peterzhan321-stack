@@ -4,7 +4,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2EAADC&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%3E+Hello+World%2C+I'm+peter+%F0%9F%91%8B;Welcome+to+my+space+%E2%9C%A8" alt="Typing SVG" />
 
 <!-- GitHub 封面 -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:2EAADC,100:1F6FEB&height=220&section=header&text=peterzhan321-stack&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=%E2%9A%A1+C%2B%2B+%7C+%F0%9F%A7%A0+Systems+%7C+%F0%9F%8E%AF+BUPT&descSize=18&descAlignY=55&animation=twinkling" width="100%"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:2EAADC,100:1F6FEB&height=220&section=header&text=peterzhan321-stack&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=%E2%9A%A1+C%2B%2B+%7C+%F0%9F%A7%A0+Systems+%7C+%F0%9F%8E%AF+MIT&descSize=18&descAlignY=55&animation=twinkling" width="100%"/>
 
 </div>
 
