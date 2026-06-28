@@ -1,10 +1,14 @@
 <div align="center">
 
+<!-- MIT Logo -->
+<img src="https://img.shields.io/badge/-MIT-A31F34?style=for-the-badge&logo=mit&logoColor=white" />
+<img src="https://img.shields.io/badge/-Google-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+
 <!-- 炫酷的动态头像 -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2EAADC&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%3E+Hello+World%2C+I'm+peter+%F0%9F%91%8B;Welcome+to+my+space+%E2%9C%A8" alt="Typing SVG" />
 
 <!-- GitHub 封面 -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:2EAADC,100:1F6FEB&height=220&section=header&text=peterzhan321-stack&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=%E2%9A%A1+C%2B%2B+%7C+%F0%9F%A7%A0+Systems+%7C+%F0%9F%8E%AF+MIT&descSize=18&descAlignY=55&animation=twinkling" width="100%"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:A31F34,100:4285F4&height=220&section=header&text=peterzhan321-stack&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=%E2%9A%A1+C%2B%2B+%7C+%F0%9F%A7%A0+Systems+%7C+MIT+%E2%86%92+Google&descSize=18&descAlignY=55&animation=twinkling" width="100%"/>
 
 </div>
 
@@ -23,16 +27,52 @@
 name: "peter"
 education:
   - university: "Massachusetts Institute of Technology (MIT)"
+    motto: "Mens et Manus — Mind and Hand"
 location: "New York, USA 🇺🇸"
 fields:
   - "C++ / Systems Programming 🖥️"
   - "Algorithm & Data Structure 📐"
   - "Competitive Programming 🏆"
+aspiration: "Google 🤝 MIT → Building the Future"
 hobbies:
   - "Exploring low-level systems 🔧"
   - "Solving algorithmic challenges 🧩"
   - "Building cool stuff 💡"
 ```
+
+</div>
+
+<br/>
+
+## 🎓 MIT × Google
+
+<div align="center">
+
+<!-- MIT Logo -->
+<table>
+  <tr>
+    <td align="center" width="200">
+      <a href="https://web.mit.edu/">
+        <img src="https://img.shields.io/badge/-MIT_A31F34?style=for-the-badge&logo=mit&logoColor=white&label=MENS+ET+MANUS" width="200"/>
+      </a>
+      <br/>
+      <sub><b>Massachusetts Institute of Technology</b></sub>
+    </td>
+    <td width="50"></td>
+    <td align="center" width="200">
+      <a href="https://about.google/">
+        <img src="https://img.shields.io/badge/-Google_4285F4?style=for-the-badge&logo=google&logoColor=white&label=ORGANIZE+THE+WORLD'S+INFO" width="200"/>
+      </a>
+      <br/>
+      <sub><b>Google LLC</b></sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- MIT & Google 名言 -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=5000&pause=2000&color=A31F34&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=%22The+real+danger+is+not+that+computers+will+begin+to+think+like+men%2C%0A+but+that+men+will+begin+to+think+like+computers.%22+—+Sydney+Harris;MIT+%E2%9A%9B+Google+%E2%9A%9B+The+Future+of+Technology" alt="MIT Quote" />
 
 </div>
 
@@ -56,6 +96,9 @@ hobbies:
 <!-- 框架/库 -->
 <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
 <img src="https://img.shields.io/badge/-LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" />
+<img src="https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
 
 </div>
 
