@@ -22,8 +22,8 @@
 ```yaml
 name: "peter"
 education:
-  - university: "北京邮电大学 (BUPT)"
-location: "Beijing, China 🇨🇳"
+  - university: "Massachusetts Institute of Technology (MIT)"
+location: "New York, USA 🇺🇸"
 fields:
   - "C++ / Systems Programming 🖥️"
   - "Algorithm & Data Structure 📐"
